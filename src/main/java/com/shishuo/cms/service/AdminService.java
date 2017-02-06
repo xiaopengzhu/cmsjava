@@ -119,7 +119,7 @@ public class AdminService {
 			HttpSession session = request.getSession();
 			admin.setPassword("");
 			if (name.equals(PropertyUtils
-					.getValue("shishuocms.admin"))) {
+					.getValue("xpcms.admin"))) {
 				admin.setAdmin(true);
 			} else {
 				admin.setAdmin(false);
@@ -186,7 +186,7 @@ public class AdminService {
 
 	public long getSuperAdminId() {
 		Admin admin = getAdminByName(PropertyUtils
-				.getValue("shishuocms.admin"));
+				.getValue("xpcms.admin"));
 		return admin.getAdminId();
 	}
 }
