@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<organization>
-		<name>shishuo</name>
-		<url>http://www.shishuo.com</url>
+		<name>xpcms</name>
+		<url>http://www.xpcms.net</url>
 	</organization>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.shishuo</groupId>
-	<artifactId>shishuocms</artifactId>
+	<groupId>com.zxp</groupId>
+	<artifactId>xpcms</artifactId>
 	<packaging>war</packaging>
-	<version>2.0.1</version>
-	<name>SHISHUO CMS (http://shishuo.com/cms)</name>
-	<url>http://shishuocms.aliapp.com</url>
+	<version>3.0.0</version>
+	<name>XPCMS</name>
+	<url>http://www.xpcms.net</url>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -230,7 +230,7 @@
 								<resource>
 									<directory>.</directory>
 									<includes>
-										<include>shishuocms.properties</include>
+										<include>xpcms.properties</include>
 									</includes>
 								</resource>
 							</resources>
