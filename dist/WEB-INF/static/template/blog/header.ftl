@@ -42,7 +42,3 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="blog-header">
-			<h1 class="blog-title">${shishuo_seo_title}</h1>
-			<p class="lead blog-description">${shishuo_seo_description}</p>
-		</div>
