@@ -108,9 +108,6 @@
 						<a <#if menu="update_password">class="active"</#if> href="${BASE_PATH}/manage/admin/update.htm"> <i class="icon-home"></i> <span>修改密码</span></a>
 					</li>
 					</#if>
-					<li class="">
-						<a target="_blank" href="http://rj.baidu.com/soft/detail/14744.html"><span>推荐Google浏览器</span></a>
-					</li>
 				</ul>
 			</div>
 		</aside>
