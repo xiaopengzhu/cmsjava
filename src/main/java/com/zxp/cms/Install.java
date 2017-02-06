@@ -1,8 +1,3 @@
-/*
- *	Copyright © 2013 Changsha Shishuo Network Technology Co., Ltd. All rights reserved.
- *	长沙市师说网络科技有限公司 版权所有
- *	http://www.shishuo.com
- */
 package com.zxp.cms;
 
 import java.io.BufferedInputStream;
@@ -19,11 +14,9 @@ import com.mysql.jdbc.Connection;
 
 /**
  * 
- * 师说CMS安装程序 如果出现乱码请在控制台运行 <br>
+ * XPCMS安装程序 如果出现乱码请在控制台运行 <br>
  * Windows: set MAVEN_OPTS=-Dfile.encoding=UTF-8<br>
  * Linux: export MAVEN_OPTS=-Dfile.encoding=UTF-8
- * 
- * @author Herbert
  * 
  */
 public class Install {
@@ -96,7 +89,7 @@ public class Install {
 		System.out
 				.println("                                                                        7       ");
 		Properties props = System.getProperties();
-		System.out.println("\n\n欢迎使用【师说CMS】\n\n");
+		System.out.println("\n\n欢迎使用【XPCMS】\n\n");
 		System.out.println("Windows: set MAVEN_OPTS=-Dfile.encoding=UTF-8");
 		System.out.println("Linux: export MAVEN_OPTS=-Dfile.encoding=UTF-8");
 		System.out.println("操作系统的名称\t\t" + props.getProperty("os.name"));

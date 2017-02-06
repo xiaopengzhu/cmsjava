@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="${shishuo_seo_description}">
-<meta name="author" content="师说CMS">
+<meta name="author" content="XPCMS">
 <link rel="icon" href="${TEMPLATE_BASE_PATH}/images/favicon.ico">
 
 <title>${shishuo_seo_title}</title>

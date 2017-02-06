@@ -121,8 +121,8 @@ CREATE TABLE `media` (
 
 CREATE TABLE `user` (
   `userId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
-  `openId` bigint(20) DEFAULT NULL COMMENT '公共用户ID，只有是师说，QQ，微博等其它网站登录时才有。',
-  `type` varchar(20) DEFAULT NULL COMMENT '帐号类型：0 本站 1 师说 2 QQ 3 微博',
+  `openId` bigint(20) DEFAULT NULL COMMENT '公共用户ID，QQ，微博等其它网站登录时才有。',
+  `type` varchar(20) DEFAULT NULL COMMENT '帐号类型：0 本站 1 xx 2 QQ 3 微博',
   `name` varchar(45) DEFAULT NULL COMMENT '用户名',
   `createTime` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`userId`)
@@ -133,8 +133,8 @@ INSERT INTO `admin` VALUES (1,'admin','e10adc3949ba59abbe56e057f20f883e','2012-0
 
 INSERT INTO `config` VALUES ('shishuo_headline_image_height','420','首页头图的高（px）','2012-08-08 00:00:00');
 INSERT INTO `config` VALUES ('shishuo_headline_image_width','858','首页头图的宽（px）','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_seo_headline','师说CMS是用Java开发的内容管理系统','网站口号','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_seo_title','师说CMS','网站名称','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('shishuo_seo_headline','XPCMS是用Java开发的内容管理系统','网站口号','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('shishuo_seo_title','XPCMS','网站名称','2012-08-08 00:00:00');
 INSERT INTO `config` VALUES ('shishuo_static','false','是否启用全站静态化','2012-08-08 00:00:00');
 INSERT INTO `config` VALUES ('shishuo_template','blog','模板','2012-08-08 00:00:00');
 

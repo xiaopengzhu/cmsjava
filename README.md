@@ -12,7 +12,7 @@
 
 ## 部署开发环境
 1. 下载 [Eclipse IDE for Java EE Developers](http://eclipse.org/downloads/)
-2. 打开eclpse,导入师说CMS
+2. 打开eclpse,导入XPCMS
 3. File -> Import -> Git -> Projects from Git -> Clone URI
 4. 然后在URI输入：https://xpcms.git
 5. 等待eclipse自动下载jar包
