@@ -38,7 +38,7 @@
 
 	<filter>
 		<filter-name>ftlFilter</filter-name>
-		<filter-class>com.shishuo.cms.filter.FtlFilter</filter-class>
+		<filter-class>com.zxp.cms.filter.FtlFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>ftlFilter</filter-name>
@@ -47,7 +47,7 @@
 
 	<filter>
 		<filter-name>manage</filter-name>
-		<filter-class>com.shishuo.cms.filter.ManageFilter</filter-class>
+		<filter-class>com.zxp.cms.filter.ManageFilter</filter-class>
 	</filter>
 
 	<filter-mapping>
