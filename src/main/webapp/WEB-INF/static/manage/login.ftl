@@ -119,26 +119,26 @@ input.error:focus {
 		}
 		$(function() {
 			$('#adminForm')
-					.ajaxForm(
-							{
-								dataType : 'json',
-								success : function(data) {
-									if (data.result) {
-										location.href = "${BASE_PATH}/manage/article/list.htm";
-									} else {
-										showErrors($('#adminForm'), data.errors);
-										if (data.msg == "change_captcha") {
-											$('#captcha').attr(
-													"src",
-													"${BASE_PATH}/admin/captcha.htm?"
-															+ Math.random());
-											$(
-													'#adminForm input[name="captcha"]')
-													.val('');
-										}
-									}
+				.ajaxForm(
+					{
+						dataType : 'json',
+						success : function(data) {
+							if (data.result) {
+								location.href = "${BASE_PATH}/manage/article/list.htm";
+							} else {
+								showErrors($('#adminForm'), data.errors);
+								if (data.msg == "change_captcha") {
+									$('#captcha').attr(
+											"src",
+											"${BASE_PATH}/admin/captcha.htm?"
+													+ Math.random());
+									$(
+											'#adminForm input[name="captcha"]')
+											.val('');
 								}
-							});
+							}
+						}
+					});
 		});
 	</script>
 </body>

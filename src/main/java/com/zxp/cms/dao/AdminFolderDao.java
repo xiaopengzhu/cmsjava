@@ -10,14 +10,14 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AdminFolderDao {
 
-	public int addAdminFolder(AdminFolder adminFolder);
+	int addAdminFolder(AdminFolder adminFolder);
 
-	public int deleteAdminFolder(@Param("adminId") long adminId,
+	int deleteAdminFolder(@Param("adminId") long adminId,
 			@Param("folderId") long folderId);
 
-	public List<AdminFolderVo> getAdminFolderListById(
+	List<AdminFolderVo> getAdminFolderListById(
 			@Param("adminId") long adminId);
 
-	public AdminFolderVo getAdminFolderById(@Param("adminId") long adminId,
+	AdminFolderVo getAdminFolderById(@Param("adminId") long adminId,
 			@Param("folderId") long folderId);
 }

@@ -27,7 +27,7 @@ public interface ArticleDao {
 	 * 
 	 * @return Integer
 	 */
-	public int addArticle(Article article);
+	int addArticle(Article article);
 
 	// ///////////////////////////////
 	// ///// 刪除 ////////
@@ -38,7 +38,7 @@ public interface ArticleDao {
 	 * 
 	 * @return boolean
 	 */
-	public boolean deleteArticleById(@Param("articleId") long articleId);
+	boolean deleteArticleById(@Param("articleId") long articleId);
 
 	// ///////////////////////////////
 	// ///// 修改 ////////
@@ -50,7 +50,7 @@ public interface ArticleDao {
 	 * @param article
 	 * @return Integer
 	 */
-	public int updateArticle(Article article);
+	int updateArticle(Article article);
 
 	/**
 	 * 更新浏览人数
@@ -59,7 +59,7 @@ public interface ArticleDao {
 	 * @param viewCount
 	 * @return int
 	 */
-	public int updateViewCount(@Param("articleId") long articleId,
+	int updateViewCount(@Param("articleId") long articleId,
 			@Param("viewCount") int viewCount);
 
 	/**
@@ -70,10 +70,10 @@ public interface ArticleDao {
 	 * @return int
 	 */
 
-	public int updateCommentCount(@Param("articleId") long articleId,
+	int updateCommentCount(@Param("articleId") long articleId,
 			@Param("commentCount") int commentCount);
 
-	public int updateCheck(@Param("articleId") long articleId,
+	int updateCheck(@Param("articleId") long articleId,
 			@Param("check") ArticleConstant.check check);
 
 	// ///////////////////////////////
@@ -86,53 +86,50 @@ public interface ArticleDao {
 	 * @param articleId
 	 * @return File
 	 */
-	public ArticleVo getArticleById(@Param("articleId") long articleId);
+	ArticleVo getArticleById(@Param("articleId") long articleId);
 
 	/**
 	 * 得到目录的文件的列表
 	 * 
-	 * @param foderId
 	 * @return List<FileVo>
 	 */
-	public List<ArticleVo> getArticleListOfDisplayByPath(
+	List<ArticleVo> getArticleListOfDisplayByPath(
 			@Param("path") String path, @Param("offset") long offset,
 			@Param("rows") long rows);
 
 	/**
 	 * 得到目录的所有文件的数量
 	 * 
-	 * @param foderId
 	 * @return Integer
 	 */
-	public int getArticleCountOfDisplayByPath(@Param("path") String path);
+	int getArticleCountOfDisplayByPath(@Param("path") String path);
 
 	/**
 	 * 得到某种显示的文件的列表
-	 * 
-	 * @param foderId
+	 *
 	 * @return List<FileVo>
 	 */
-	public List<ArticleVo> getArticleListByAdminIdAndPath(
+	List<ArticleVo> getArticleListByAdminIdAndPath(
 			@Param("adminId") long adminId, @Param("path") String path,
 			@Param("check") ArticleConstant.check check,
 			@Param("offset") long offset, @Param("rows") long rows);
 
 	/**
-	 * @param firstFolderId
-	 * @param secondFolderId
-	 * @param thirdFolderId
-	 * @param fourthFolderId
+	 *
+	 * @param adminId
+	 * @param path
+	 * @param check
 	 * @return
 	 */
-	public int getArticleCountByAdminIdAndPath(@Param("adminId") long adminId,
+	int getArticleCountByAdminIdAndPath(@Param("adminId") long adminId,
 			@Param("path") String path,
 			@Param("check") ArticleConstant.check check);
 
 	/**
-	 * @param adminId
-	 * @param path
+	 *
+	 * @param folderId
 	 * @return
 	 */
-	public int getArticleCountByFolderId(@Param("folderId") long folderId);
+	int getArticleCountByFolderId(@Param("folderId") long folderId);
 
 }

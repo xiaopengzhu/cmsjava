@@ -25,7 +25,7 @@ public interface ConfigDao {
 	 * 
 	 * @return Integer
 	 */
-	public int addConfig(Config config);
+	int addConfig(Config config);
 
 	// ///////////////////////////////
 	// ///// 刪除 ////////
@@ -36,7 +36,7 @@ public interface ConfigDao {
 	 * 
 	 * return Integer
 	 */
-	public int deleteConfig(@Param("key") String key);
+	int deleteConfig(@Param("key") String key);
 
 	// ///////////////////////////////
 	// ///// 修改 ////////
@@ -47,7 +47,7 @@ public interface ConfigDao {
 	 * 
 	 * @return Integer
 	 */
-	public int updateConfig(Config config);
+	int updateConfig(Config config);
 
 	// ///////////////////////////////
 	// ///// 查詢 ////////
@@ -58,5 +58,5 @@ public interface ConfigDao {
 	 * 
 	 * @return Config
 	 */
-	public Config getConfigByKey(@Param("key") String key);
+	Config getConfigByKey(@Param("key") String key);
 }

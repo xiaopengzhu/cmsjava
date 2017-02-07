@@ -22,12 +22,12 @@ public interface AdminDao {
 
 	/**
 	 * 添加管理员
-	 * 
-	 * @param Admin
+	 *
+	 * @param admin
 	 * @return Integer
-	 * 
+	 *
 	 */
-	public int addAdmin(Admin admin);
+	int addAdmin(Admin admin);
 
 	// ///////////////////////////////
 	// ///// 刪除 ////////
@@ -40,7 +40,7 @@ public interface AdminDao {
 	 * @return Integer
 	 * 
 	 */
-	public int deleteAdmin(@Param("adminId") long adminId);
+	int deleteAdmin(@Param("adminId") long adminId);
 
 	// ///////////////////////////////
 	// ///// 修改 ////////
@@ -49,11 +49,10 @@ public interface AdminDao {
 	/**
 	 * 修改管理员的信息
 	 * 
-	 * @param userId
-	 * @param name
+	 * @param adminId
 	 * @param password
 	 */
-	public void updateAdminByadminId(@Param("adminId") long adminId,
+	void updateAdminByadminId(@Param("adminId") long adminId,
 			@Param("password") String password);
 
 	// ///////////////////////////////
@@ -68,7 +67,7 @@ public interface AdminDao {
 	 * @return List<Admin>
 	 * 
 	 */
-	public List<Admin> getAllList(@Param("offset") long offset,
+	List<Admin> getAllList(@Param("offset") long offset,
 			@Param("rows") long rows);
 
 	/**
@@ -77,7 +76,7 @@ public interface AdminDao {
 	 * @return Integer
 	 * 
 	 */
-	public int getAllListCount();
+	int getAllListCount();
 
 	/**
 	 * 通过Id获得指定管理员资料
@@ -85,15 +84,15 @@ public interface AdminDao {
 	 * @param adminId
 	 * @return Admin
 	 */
-	public Admin getAdminById(@Param("adminId") long adminId);
+	Admin getAdminById(@Param("adminId") long adminId);
 
 	/**
 	 * 通过email获得指定的管理员
 	 * 
-	 * @param email
+	 * @param name
 	 * @return Admin
 	 * 
 	 */
-	public AdminVo getAdminByName(@Param("name") String name);
+	AdminVo getAdminByName(@Param("name") String name);
 
 }

@@ -141,7 +141,7 @@ public class TemplateService {
 	 */
 	private String getTemplatePath(String template) {
 		return "/template/"
-				+ configService.getStringByKey(ConfigConstant.DEFAUTL_TEMPLATE)
+				+ configService.getStringByKey(ConfigConstant.DEFAULT_TEMPLATE)
 				+ "/" + template;
 	}
 
@@ -154,7 +154,7 @@ public class TemplateService {
 	@Cacheable("default")
 	public Boolean isExist(String theme) {
 		String themePath = "/WEB-INF/static/template/"
-				+ configService.getStringByKey(ConfigConstant.DEFAUTL_TEMPLATE)
+				+ configService.getStringByKey(ConfigConstant.DEFAULT_TEMPLATE)
 				+ "/" + theme + ".ftl";
 		File file = new File(SystemConstant.CMS_ROOT + themePath);
 		if (file.exists()) {

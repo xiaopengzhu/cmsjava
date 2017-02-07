@@ -21,7 +21,7 @@ public interface MediaDao {
 	 * @param att
 	 * @return
 	 */
-	public int addMedia(Media att);
+	int addMedia(Media att);
 
 	// ///////////////////////////////
 	// ///// 删除 ////////
@@ -31,16 +31,16 @@ public interface MediaDao {
 	 * @param mediaId
 	 * @return
 	 */
-	public int deleteMedia(@Param("mediaId") long mediaId);
+	int deleteMedia(@Param("mediaId") long mediaId);
 
 	// ///////////////////////////////
 	// ///// 修改////////
 	// ///////////////////////////////
 
-	public int updateLinkByMediaId(@Param("mediaId") long mediaId,
+	int updateLinkByMediaId(@Param("mediaId") long mediaId,
 			@Param("link") String link);
 
-	public int updateNameByMediaId(@Param("mediaId") long mediaId,
+	int updateNameByMediaId(@Param("mediaId") long mediaId,
 			@Param("name") String name);
 
 	// ///////////////////////////////
@@ -51,22 +51,20 @@ public interface MediaDao {
 	 * @param mediaId
 	 * @return
 	 */
-	public Media getMediaById(@Param("mediaId") long mediaId);
+	Media getMediaById(@Param("mediaId") long mediaId);
 
 	/**
-	 * @param folderId
 	 * @return
 	 */
-	public int getMediaCountByKindId(@Param("kindId") long kindId,
+	int getMediaCountByKindId(@Param("kindId") long kindId,
 			@Param("kind") MediaConstant.Kind kind);
 
 	/**
-	 * @param folderId
 	 * @param offset
 	 * @param rows
 	 * @return
 	 */
-	public List<Media> getMediaListByKindId(@Param("kindId") long kindId,
+	List<Media> getMediaListByKindId(@Param("kindId") long kindId,
 			@Param("kind") MediaConstant.Kind kind,
 			@Param("offset") int offset, @Param("rows") int rows);
 
@@ -74,22 +72,20 @@ public interface MediaDao {
 	 * @param kindId
 	 * @param kind
 	 * @param type
-	 * @param status
 	 * @return
 	 */
-	public int getMediaCountByKindAndType(@Param("kindId") long kindId,
+	int getMediaCountByKindAndType(@Param("kindId") long kindId,
 			@Param("kind") Kind kind, @Param("type") Type type);
 
 	/**
 	 * @param kindId
 	 * @param kind
 	 * @param type
-	 * @param status
 	 * @param offset
 	 * @param rows
 	 * @return
 	 */
-	public List<Media> getMediaListByKindAndType(@Param("kindId") long kindId,
+	List<Media> getMediaListByKindAndType(@Param("kindId") long kindId,
 			@Param("kind") Kind kind, @Param("type") Type type,
 			@Param("offset") int offset, @Param("rows") int rows);
 

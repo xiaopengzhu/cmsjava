@@ -29,7 +29,7 @@ public interface FolderDao {
 	 * 
 	 * @return Integer
 	 */
-	public int addFolder(Folder folder);
+	int addFolder(Folder folder);
 
 	// ///////////////////////////////
 	// ///// 刪除 ////////
@@ -40,7 +40,7 @@ public interface FolderDao {
 	 * @param folder
 	 * @return boolean
 	 */
-	public boolean deleteFolder(@Param("folderId") long folderId);
+	boolean deleteFolder(@Param("folderId") long folderId);
 
 	// ///////////////////////////////
 	// ///// 修改 ////////
@@ -53,16 +53,16 @@ public interface FolderDao {
 	 * @param content
 	 * @param status
 	 */
-	public void updateFolderById(@Param("folderId") long folderId,
+	void updateFolderById(@Param("folderId") long folderId,
 			@Param("name") String name, @Param("ename") String ename,
 			@Param("status") FolderConstant.status status,
 			@Param("content") String content, @Param("height") int height,
 			@Param("width") int width);
 
-	public int updateSort(@Param("folderId") long folderId,
+	int updateSort(@Param("folderId") long folderId,
 			@Param("sort") int sort);
 
-	public int updateCount(@Param("folderId") long folderId,
+	int updateCount(@Param("folderId") long folderId,
 			@Param("count") int count);
 
 	// ///////////////////////////////
@@ -74,7 +74,7 @@ public interface FolderDao {
 	 * @param folderId
 	 * @return Folder
 	 */
-	public FolderVo getFolderById(@Param("folderId") long folderId);
+	FolderVo getFolderById(@Param("folderId") long folderId);
 
 	/**
 	 * 得到所有子目录
@@ -82,7 +82,7 @@ public interface FolderDao {
 	 * @param fatherId
 	 * @return List<FolderVo>
 	 */
-	public List<FolderVo> getFolderListByFatherId(
+	List<FolderVo> getFolderListByFatherId(
 			@Param("fatherId") long fatherId,
 			@Param("status") FolderConstant.status status);
 
@@ -93,18 +93,18 @@ public interface FolderDao {
 	 * @param fatherId
 	 * @return
 	 */
-	public Folder getFolderByEname(@Param("ename") String ename);
+	Folder getFolderByEname(@Param("ename") String ename);
 
 	/**
 	 * @param folderId
 	 * @param status
 	 */
-	public void updateStatus(@Param("folderId") long folderId,
+	void updateStatus(@Param("folderId") long folderId,
 			@Param("status") status status);
 
-	public int updatePath(@Param("folderId") long folderId,
+	int updatePath(@Param("folderId") long folderId,
 			@Param("path") String path);
 
-	public List<FolderVo> getAllFolderList();
+	List<FolderVo> getAllFolderList();
 
 }

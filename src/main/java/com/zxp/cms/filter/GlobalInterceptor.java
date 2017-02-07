@@ -47,7 +47,7 @@ public class GlobalInterceptor implements HandlerInterceptor {
 						basePath
 								+ "/static/template/"
 								+ configService
-										.getStringByKey(ConfigConstant.DEFAUTL_TEMPLATE));
+										.getStringByKey(ConfigConstant.DEFAULT_TEMPLATE));
 		modelAndView.addObject("seo_title",
 				configService.getStringByKey("seo_title"));
 		modelAndView.addObject("seo_description",
