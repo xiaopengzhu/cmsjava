@@ -11,7 +11,6 @@ public class UserConstant {
 	 * 
 	 */
 	public static enum Type {
-		SHISHUO
 	};
 
 }

@@ -55,6 +55,6 @@ public class HttpUtils {
 	 * @return
 	 */
 	public static String getRealPath() {
-		return SystemConstant.SHISHUO_CMS_ROOT;
+		return SystemConstant.CMS_ROOT;
 	}
 }

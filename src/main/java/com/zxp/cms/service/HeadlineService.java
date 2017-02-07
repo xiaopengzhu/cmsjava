@@ -27,8 +27,8 @@ public class HeadlineService {
 			String url) throws UploadException, IOException {
 		Headline headline = new Headline();
 		String picture = MediaUtils.saveImage(multipartFile,
-				configService.getIntKey("shishuo_headline_image_width"),
-				configService.getIntKey("shishuo_headline_image_height"));
+				configService.getIntKey("headline_image_width"),
+				configService.getIntKey("headline_image_height"));
 		headline.setName(name);
 		headline.setPicture(picture);
 		headline.setUrl(url);
@@ -47,8 +47,8 @@ public class HeadlineService {
 		String picture = this.getHeadlineById(headlineId).getPicture();
 		if (file != null && !file.isEmpty()) {
 			picture = MediaUtils.saveImage(file,
-					configService.getIntKey("shishuo_headline_image_width"),
-					configService.getIntKey("shishuo_headline_image_height"));
+					configService.getIntKey("headline_image_width"),
+					configService.getIntKey("headline_image_height"));
 		}
 		return headlineDao.updateHeadlineById(headlineId, name, picture, url);
 	}

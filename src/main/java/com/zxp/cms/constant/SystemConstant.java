@@ -13,7 +13,7 @@ public class SystemConstant {
 	/**
 	 * 应用部署路径的KEY
 	 */
-	public static String SHISHUO_CMS_ROOT = PropertyUtils.getRoot();
+	public static String CMS_ROOT = PropertyUtils.getRoot();
 
 	/**
 	 * 上传文件夹
@@ -33,7 +33,7 @@ public class SystemConstant {
 	/**
 	 * 头像URL 180x180
 	 */
-	public static final String FACE_URL = "http://faceurl.shishuo.com/face";
+	public static final String FACE_URL = "http://www.xpcms.net/images/head";
 
 	/**
 	 * 

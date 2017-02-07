@@ -35,8 +35,8 @@ public class ManageHeadlineAction extends ManageBaseAction {
 
 	@RequestMapping(value = "/add.htm", method = RequestMethod.GET)
 	public String add(ModelMap modelMap, HttpServletRequest request) {
-		int width = configService.getIntKey("shishuo_headline_image_width");
-		int height = configService.getIntKey("shishuo_headline_image_height");
+		int width = configService.getIntKey("headline_image_width");
+		int height = configService.getIntKey("headline_image_height");
 		modelMap.put("width", width);
 		modelMap.put("height", height);
 		return "manage/headline/add";

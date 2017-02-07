@@ -131,12 +131,11 @@ CREATE TABLE `user` (
 
 INSERT INTO `admin` VALUES (1,'admin','e10adc3949ba59abbe56e057f20f883e','2012-08-08 00:00:00');
 
-INSERT INTO `config` VALUES ('shishuo_headline_image_height','420','首页头图的高（px）','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_headline_image_width','858','首页头图的宽（px）','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_seo_headline','XPCMS是用Java开发的内容管理系统','网站口号','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_seo_title','XPCMS','网站名称','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_static','false','是否启用全站静态化','2012-08-08 00:00:00');
-INSERT INTO `config` VALUES ('shishuo_template','blog','模板','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('headline_image_height','420','首页头图的高（px）','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('headline_image_width','858','首页头图的宽（px）','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('seo_headline','XPCMS是用Java开发的内容管理系统','网站口号','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('seo_title','XPCMS','网站名称','2012-08-08 00:00:00');
+INSERT INTO `config` VALUES ('default_template','blog','模板','2012-08-08 00:00:00');
 
 INSERT INTO `admin_folder` VALUES (1,1,'2014-10-29 20:48:42');
 INSERT INTO `admin_folder` VALUES (1,3,'2014-10-29 20:48:43');
