@@ -2,6 +2,7 @@ package com.zxp.cms.service;
 
 import com.zxp.cms.dao.LinkDao;
 import com.zxp.cms.entity.Link;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +13,10 @@ import java.util.List;
 @Service
 public class LinkService {
 
+    @Autowired
     private LinkDao linkDao;
 
-    public List<Link> list() {
+    public List<Link> findAll() {
         return linkDao.list();
     }
 }

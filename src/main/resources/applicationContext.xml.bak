@@ -182,4 +182,5 @@
 		<property name="annotationClass" value="org.springframework.stereotype.Repository" />
 		<property name="basePackage" value="com.zxp.cms.dao" />
 	</bean>
+
 </beans>
