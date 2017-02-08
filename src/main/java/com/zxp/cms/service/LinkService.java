@@ -19,4 +19,8 @@ public class LinkService {
     public List<Link> findAll() {
         return linkDao.list();
     }
+
+    public Link getById(Integer id) {
+        return linkDao.get(id);
+    }
 }

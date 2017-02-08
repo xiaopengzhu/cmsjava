@@ -10,4 +10,8 @@
 	<select id="list" resultType="com.zxp.cms.entity.Link">
 		select * from lv_link
 	</select>
+
+	<select id="get" resultType="com.zxp.cms.entity.Link">
+		select * from lv_link WHERE id=#{id}
+	</select>
 </mapper>  

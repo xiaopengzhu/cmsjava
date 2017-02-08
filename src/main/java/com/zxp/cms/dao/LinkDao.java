@@ -8,4 +8,6 @@ import java.util.List;
 @Repository
 public interface LinkDao {
     List<Link> list();
+
+    Link get(Integer id);
 }
