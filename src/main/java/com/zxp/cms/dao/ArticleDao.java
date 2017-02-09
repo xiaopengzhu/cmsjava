@@ -9,12 +9,6 @@ import com.zxp.cms.entity.vo.ArticleVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-/**
- * 文件服务
- * 
- * @author Harbored
- * 
- */
 @Repository
 public interface ArticleDao {
 
@@ -22,11 +16,6 @@ public interface ArticleDao {
 	// ///// 增加 ////////
 	// ///////////////////////////////
 
-	/**
-	 * 增加文件
-	 * 
-	 * @return Integer
-	 */
 	int addArticle(Article article);
 
 	// ///////////////////////////////

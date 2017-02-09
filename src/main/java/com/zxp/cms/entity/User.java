@@ -4,13 +4,6 @@ import java.util.Date;
 
 import com.zxp.cms.constant.UserConstant;
 
-/**
- * 用户实体
- * 
- * @author zsy
- * 
- */
-
 public class User {
 
 	/**

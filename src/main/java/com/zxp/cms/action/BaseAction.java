@@ -8,11 +8,6 @@ import com.zxp.cms.service.FolderService;
 import com.zxp.cms.service.HeadlineService;
 import com.zxp.cms.service.TemplateService;
 
-/**
- * 
- * @author Herbert
- * 
- */
 public class BaseAction {
 
 	@Autowired

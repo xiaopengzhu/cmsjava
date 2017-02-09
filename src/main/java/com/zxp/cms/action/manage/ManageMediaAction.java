@@ -31,11 +31,6 @@ import com.zxp.cms.exception.FolderNotFoundException;
 @RequestMapping("/manage/media")
 public class ManageMediaAction extends ManageBaseAction {
 
-	/**
-	 * @author 进入某种文件的列表分页的首页
-	 * @throws FolderNotFoundException
-	 * 
-	 */
 	@RequestMapping(value = "/page.htm", method = RequestMethod.GET)
 	public String filePage(
 			@RequestParam(value = "p", defaultValue = "1") int pageNum,
@@ -91,11 +86,6 @@ public class ManageMediaAction extends ManageBaseAction {
 		return json.toString();
 	}
 
-	/**
-	 * @author 彻底删除文件
-	 * @throws ArticleNotFoundException
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/delete.json", method = RequestMethod.POST)
 	public JsonVo<String> deleteFile(

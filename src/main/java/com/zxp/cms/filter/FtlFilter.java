@@ -14,13 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.zxp.cms.util.HttpUtils;
 import org.apache.log4j.Logger;
 
-/**
- * 
- * Ftl文件安全过滤器
- * 
- * @author Herbert
- * 
- */
 public class FtlFilter implements Filter {
 
 	protected final Logger logger = Logger.getLogger(this.getClass());

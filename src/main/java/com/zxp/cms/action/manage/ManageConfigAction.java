@@ -15,22 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * 网站配置action
- * 
- * @author Herbert
- * 
- */
 @Controller
 @RequestMapping("/manage/config")
 public class ManageConfigAction extends ManageBaseAction {
 
-	/**
-	 * 网站配置
-	 * 
-	 * @author Administrator
-	 * 
-	 */
 	@RequestMapping(value = "/basic.htm", method = RequestMethod.GET)
 	public String basic(ModelMap modelMap) {
 		List<String> templateList = this.getTemplate();
@@ -38,12 +26,6 @@ public class ManageConfigAction extends ManageBaseAction {
 		return "system/config/basic";
 	}
 
-	/**
-	 * 修改网站配置
-	 * 
-	 * @author Administrator
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/basic.json", method = RequestMethod.POST)
 	public JsonVo<String> basicSubmit(

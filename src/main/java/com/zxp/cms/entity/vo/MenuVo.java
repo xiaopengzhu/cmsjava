@@ -1,11 +1,5 @@
 package com.zxp.cms.entity.vo;
 
-/**
- * 菜单VO
- * 
- * @author Herbert
- * 
- */
 public class MenuVo {
 	private String name;
 	private String url;

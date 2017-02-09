@@ -1,12 +1,5 @@
 package com.zxp.cms.exception;
 
-/**
- * 
- * 目录没有发现异常
- * 
- * @author Herbert
- * 
- */
 public class TemplateNotFoundException extends Exception {
 
 	/**

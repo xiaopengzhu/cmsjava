@@ -2,11 +2,6 @@ package com.zxp.cms.constant;
 
 import org.springframework.stereotype.Component;
 
-/**
- * 系统配置常量
- * 
- * @author Herbert
- */
 @Component
 public class ConfigConstant {
 

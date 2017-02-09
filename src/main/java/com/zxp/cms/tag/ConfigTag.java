@@ -17,9 +17,6 @@ import freemarker.template.TemplateDirectiveBody;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateModel;
 
-/**
- * @author Administrator file标签
- */
 @Service
 public class ConfigTag extends TagPlugin {
 

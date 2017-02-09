@@ -28,19 +28,10 @@ import com.zxp.cms.exception.FolderNotFoundException;
 import com.zxp.cms.util.RegexUtils;
 import com.zxp.cms.util.SSUtils;
 
-/**
- * @author 目录action
- * 
- */
 @RequestMapping("/manage/folder")
 @Controller
 public class ManageFolderAction extends ManageBaseAction {
 
-	/**
-	 * @author 进入添加目录页面
-	 * @throws Exception
-	 * 
-	 */
 	@RequestMapping(value = "/add.htm", method = RequestMethod.GET)
 	public String add(ModelMap modelMap, HttpServletRequest request)
 			throws Exception {
@@ -52,10 +43,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return "manage/folder/add";
 	}
 
-	/**
-	 * @author 添加新的目录
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/add.json", method = RequestMethod.POST)
 	public JsonVo<String> add(
@@ -92,11 +79,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return json;
 	}
 
-	/**
-	 * @author 进入目录列表
-	 * @throws FolderNotFoundException
-	 * 
-	 */
 	@RequestMapping(value = "/list.htm", method = RequestMethod.GET)
 	public String list(
 			@RequestParam(value = "folderId", defaultValue = "0") long folderId,
@@ -124,11 +106,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return "manage/folder/list";
 	}
 
-	/**
-	 * @author 进入修改目录资料页面
-	 * @throws Exception
-	 * 
-	 */
 	@RequestMapping(value = "/update.htm", method = RequestMethod.GET)
 	public String oneFolder(@RequestParam("folderId") long folderId,
 			@RequestParam(value = "p", defaultValue = "1") int p,
@@ -154,10 +131,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return "manage/folder/update";
 	}
 
-	/**
-	 * @author 修改目录资料
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/update.json", method = RequestMethod.POST)
 	public JsonVo<String> update(
@@ -200,10 +173,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return json;
 	}
 
-	/**
-	 * @author 目录排序
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/sort.json", method = RequestMethod.POST)
 	public JsonVo<String> delete(
@@ -221,11 +190,6 @@ public class ManageFolderAction extends ManageBaseAction {
 		return json;
 	}
 
-	/**
-	 * @author 删除目录
-	 * @throws FolderNotFoundException
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/delete.json", method = RequestMethod.POST)
 	public JsonVo<String> delete(@RequestParam(value = "folderId") long folderId)

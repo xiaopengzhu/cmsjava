@@ -2,13 +2,6 @@ package com.zxp.cms.entity;
 
 import java.util.Date;
 
-/**
- * 网站配置实体
- * 
- * @author zsy
- * 
- */
-
 public class Config {
 
 	/**

@@ -1,12 +1,5 @@
 package com.zxp.cms.exception;
 
-/**
- * 
- * 系统配置Key获得的Value为空
- * 
- * @author Herbert
- * 
- */
 public class ConfigIsNullException extends Exception {
 
 	/**

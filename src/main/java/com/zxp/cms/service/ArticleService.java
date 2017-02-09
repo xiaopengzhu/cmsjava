@@ -27,13 +27,6 @@ import com.zxp.cms.entity.vo.FolderVo;
 import com.zxp.cms.entity.vo.PageVo;
 import com.zxp.cms.exception.FolderNotFoundException;
 
-/**
- * 
- * 文章服务
- * 
- * @author Zhangjiale
- * 
- */
 @Service
 public class ArticleService {
 

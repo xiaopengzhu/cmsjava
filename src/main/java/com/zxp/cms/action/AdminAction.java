@@ -22,11 +22,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.zxp.cms.service.AdminService;
 
-/**
- * @author Herbert
- * 
- */
-
 @Controller
 @RequestMapping("/admin")
 public class AdminAction extends BaseAction {

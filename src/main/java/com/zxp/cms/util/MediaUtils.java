@@ -17,10 +17,6 @@ import net.coobird.thumbnailator.geometry.Positions;
 import org.apache.log4j.Logger;
 import org.springframework.web.multipart.MultipartFile;
 
-/**
- * @author Herbert
- * 
- */
 public class MediaUtils {
 	
 	private static Logger logger = Logger.getLogger(MediaUtils.class);

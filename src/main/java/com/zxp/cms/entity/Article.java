@@ -5,13 +5,6 @@ import java.util.Date;
 
 import com.zxp.cms.constant.ArticleConstant;
 
-/**
- * 文件实体
- * 
- * @author zsy
- * 
- */
-
 public class Article {
 
 	/**

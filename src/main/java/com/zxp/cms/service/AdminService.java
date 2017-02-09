@@ -19,12 +19,6 @@ import org.springframework.stereotype.Service;
 import com.zxp.cms.dao.AdminDao;
 import com.zxp.cms.util.AuthUtils;
 
-/**
- * 管理员
- * 
- * @author Administrator
- * 
- */
 @Service
 public class AdminService {
 

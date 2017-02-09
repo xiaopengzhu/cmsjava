@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- * 首页
- * 
- * @author Herbert
- */
 @Controller
 public class IndexAction extends BaseAction {
 

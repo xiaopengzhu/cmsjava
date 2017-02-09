@@ -4,12 +4,6 @@ import java.util.Date;
 
 import com.zxp.cms.constant.FolderConstant;
 
-/**
- * 目录实体
- * 
- * @author zsy
- * 
- */
 public class Folder {
 	/**
 	 * 目录Id

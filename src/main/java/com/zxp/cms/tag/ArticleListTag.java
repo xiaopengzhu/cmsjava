@@ -22,10 +22,6 @@ import freemarker.template.TemplateDirectiveBody;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateModel;
 
-/**
- * @author Herbert
- * 
- */
 @Service
 public class ArticleListTag extends TagPlugin {
 

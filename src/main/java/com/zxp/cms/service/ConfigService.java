@@ -10,12 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.zxp.cms.entity.Config;
 
-/**
- * 网站配置
- * 
- * @author Zhangjiale
- * 
- */
 @Service
 public class ConfigService {
 

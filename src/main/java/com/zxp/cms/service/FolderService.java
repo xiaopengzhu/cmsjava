@@ -20,12 +20,6 @@ import com.zxp.cms.constant.FolderConstant;
 import com.zxp.cms.entity.vo.FolderVo;
 import com.zxp.cms.exception.FolderNotFoundException;
 
-/**
- * 目录服务
- * 
- * @author Zhangjiale
- * 
- */
 @Service
 public class FolderService {
 

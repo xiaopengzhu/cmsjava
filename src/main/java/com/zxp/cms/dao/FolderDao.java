@@ -11,13 +11,6 @@ import com.zxp.cms.constant.FolderConstant.status;
 import com.zxp.cms.entity.Folder;
 import com.zxp.cms.entity.vo.FolderVo;
 
-/**
- * 目录服务
- * 
- * @author Harbored
- * 
- */
-
 @Repository
 public interface FolderDao {
 

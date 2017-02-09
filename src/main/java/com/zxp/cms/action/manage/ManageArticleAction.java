@@ -32,10 +32,6 @@ import com.zxp.cms.entity.vo.ArticleVo;
 import com.zxp.cms.entity.vo.FolderVo;
 import com.zxp.cms.exception.FolderNotFoundException;
 
-/**
- * @author 文件action
- * 
- */
 @Controller
 @RequestMapping("/manage/article")
 public class ManageArticleAction extends ManageBaseAction {
@@ -88,7 +84,7 @@ public class ManageArticleAction extends ManageBaseAction {
 	}
 
 	/**
-	 * @author 进入某种文章的列表分页的首页
+	 * 进入某种文章的列表分页的首页
 	 * @throws FolderNotFoundException
 	 * 
 	 */
@@ -123,7 +119,7 @@ public class ManageArticleAction extends ManageBaseAction {
 	}
 
 	/**
-	 * @author 进入修改文章页面
+	 * 进入修改文章页面
 	 * @throws Exception
 	 * 
 	 */
@@ -142,7 +138,7 @@ public class ManageArticleAction extends ManageBaseAction {
 	}
 
 	/**
-	 * @author 修改文章资料
+	 * 修改文章资料
 	 * @param fileId
 	 * @param folderId
 	 * @param name
@@ -193,7 +189,7 @@ public class ManageArticleAction extends ManageBaseAction {
 	}
 
 	/**
-	 * @author 彻底删除文件
+	 * 彻底删除文件
 	 * @throws ArticleNotFoundException
 	 * 
 	 */
@@ -216,7 +212,7 @@ public class ManageArticleAction extends ManageBaseAction {
 	}
 
 	/**
-	 * @author 修改文件审核状态
+	 * 修改文件审核状态
 	 * @throws ArticleNotFoundException
 	 * 
 	 */

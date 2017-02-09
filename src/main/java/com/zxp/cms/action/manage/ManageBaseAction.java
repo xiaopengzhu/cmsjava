@@ -18,10 +18,6 @@ import com.zxp.cms.service.FolderService;
 import com.zxp.cms.service.HeadlineService;
 import com.zxp.cms.service.MediaService;
 
-/**
- * @author 所有action的父类
- * 
- */
 @Controller
 public class ManageBaseAction {
 

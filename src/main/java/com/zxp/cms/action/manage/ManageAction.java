@@ -13,12 +13,6 @@ import com.zxp.cms.entity.Admin;
 import com.zxp.cms.entity.vo.ArticleVo;
 import com.zxp.cms.exception.FolderNotFoundException;
 
-/**
- * @author lqq
- * @author 进入网站后台首页
- * 
- */
-
 @Controller
 @RequestMapping("/manage")
 public class ManageAction extends ManageBaseAction {

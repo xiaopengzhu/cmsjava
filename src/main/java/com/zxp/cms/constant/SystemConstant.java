@@ -2,12 +2,6 @@ package com.zxp.cms.constant;
 
 import com.zxp.cms.util.PropertyUtils;
 
-/**
- * 系统常量
- * 
- * @author Herbert
- * 
- */
 public class SystemConstant {
 
 	/**

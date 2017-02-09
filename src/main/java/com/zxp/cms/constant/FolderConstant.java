@@ -1,9 +1,5 @@
 package com.zxp.cms.constant;
 
-/**
- * @author 目录属性常量
- * 
- */
 public class FolderConstant {
 
 	public static enum status {

@@ -16,12 +16,6 @@ import freemarker.template.TemplateDirectiveBody;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateModel;
 
-/**
- * folder标签
- * 
- * @author lqq
- * 
- */
 @Service
 public class FolderUrlTag extends TagPlugin {
 	@Autowired

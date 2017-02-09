@@ -13,10 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.zxp.cms.constant.ConfigConstant;
 import com.zxp.cms.service.ConfigService;
 
-/**
- * @author Herbert
- * 
- */
 @Component
 public class GlobalInterceptor implements HandlerInterceptor {
 

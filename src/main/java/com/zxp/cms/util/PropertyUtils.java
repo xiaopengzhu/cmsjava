@@ -11,12 +11,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
-/**
- * 属性工具类
- * 
- * @author Herbert
- * 
- */
 public class PropertyUtils extends PropertyPlaceholderConfigurer {
 
 	public static final Logger logger = Logger.getLogger(PropertyUtils.class);

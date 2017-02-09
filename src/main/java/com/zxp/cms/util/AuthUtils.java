@@ -4,12 +4,6 @@ import com.zxp.cms.constant.SystemConstant;
 import com.zxp.cms.exception.AuthException;
 import org.apache.commons.codec.digest.DigestUtils;
 
-/**
- * 授权相关的工具类
- * 
- * @author Herbert
- * 
- */
 public class AuthUtils {
 
 	/**

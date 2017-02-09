@@ -6,13 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import com.zxp.cms.entity.Config;
 
-/**
- * 网站配置
- * 
- * @author Zhangjiale
- * 
- */
-
 @Repository
 public interface ConfigDao {
 

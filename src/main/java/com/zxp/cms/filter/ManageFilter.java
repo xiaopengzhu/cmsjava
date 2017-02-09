@@ -16,13 +16,6 @@ import org.apache.log4j.Logger;
 
 import com.zxp.cms.entity.Admin;
 
-/**
- * 
- * 管理过滤器
- * 
- * @author Herbert
- * 
- */
 public class ManageFilter implements Filter {
 
 	protected final Logger logger = Logger.getLogger(this.getClass());

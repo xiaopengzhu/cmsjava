@@ -5,10 +5,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 import org.springframework.web.util.HtmlUtils;
 
-/**
- * @author Herbert
- * 
- */
 public class SSUtils {
 
 	/**

@@ -3,13 +3,6 @@ package com.zxp.cms.entity;
 
 import java.util.Date;
 
-/**
- * 管理员实体
- * 
- * @author Administrator
- * 
- */
-
 public class Admin {
 
 	/**

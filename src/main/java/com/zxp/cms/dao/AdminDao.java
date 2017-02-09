@@ -7,12 +7,6 @@ import com.zxp.cms.entity.vo.AdminVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-/**
- * 管理员
- * 
- * @author Zhangjiale
- */
-
 @Repository
 public interface AdminDao {
 

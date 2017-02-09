@@ -107,10 +107,6 @@ public class ManageHeadlineAction extends ManageBaseAction {
 		return json;
 	}
 
-	/**
-	 * @author 目录排序
-	 * 
-	 */
 	@ResponseBody
 	@RequestMapping(value = "/sort.json", method = RequestMethod.POST)
 	public JsonVo<String> sort(@RequestParam(value = "sortJson") String sortJson) {

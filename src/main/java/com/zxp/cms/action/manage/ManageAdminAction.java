@@ -13,12 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * 管理员action
- * 
- * @author Zhangjiale
- * 
- */
 @Controller
 @RequestMapping("/manage/admin")
 public class ManageAdminAction extends ManageBaseAction {

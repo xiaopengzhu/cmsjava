@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.zxp.cms.entity.Folder;
 import com.zxp.cms.entity.vo.FolderVo;
 
-/**
- * @author Herbert
- * 
- */
 @Controller
 @RequestMapping("/folder")
 public class FolderAction extends BaseAction {

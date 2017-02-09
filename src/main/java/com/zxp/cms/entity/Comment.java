@@ -4,13 +4,6 @@ import java.util.Date;
 
 import com.zxp.cms.constant.CommentConstant;
 
-/**
- * 评论实体
- * 
- * @author Administrator
- * 
- */
-
 public class Comment {
 
 	/**

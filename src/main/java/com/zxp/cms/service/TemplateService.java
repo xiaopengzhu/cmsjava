@@ -17,12 +17,6 @@ import org.springframework.stereotype.Service;
 import com.zxp.cms.entity.vo.FolderVo;
 import com.zxp.cms.exception.FolderNotFoundException;
 
-/**
- * 模板工具类
- * 
- * @author Herbert
- * 
- */
 @Service
 public class TemplateService {
 

@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zxp.cms.entity.vo.ArticleVo;
 
-/**
- * @author Herbert
- * 
- */
 @Controller
 @RequestMapping("/article")
 public class ArticleAction extends BaseAction {
